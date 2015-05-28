@@ -26,6 +26,8 @@ NeoBundleCheck
 " End Neobundle Settings.
 "-------------------------
 
-
 "" jjでEscape
 inoremap jj <ESC>
+"" コメントの色
+hi Comment ctermfg=2
+
