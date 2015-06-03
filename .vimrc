@@ -29,5 +29,5 @@ NeoBundleCheck
 "" jjでEscape
 inoremap jj <ESC>
 "" コメントの色
-hi Comment ctermfg=2
+hi Comment ctermfg=6
 
