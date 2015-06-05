@@ -1,3 +1,4 @@
+set statusline=%<%f\ %m%r%h%w%{‘[‘.(&fenc!=”?&fenc:&enc).’][‘.&ff.’]’}%=%l,%c%V%8P
 set number 	" 行番号表示
 set title  	" 編集中のファイル名の表示
 set showmatch	" ()の対応
@@ -15,8 +16,10 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " neobundle自体をneobundleで管理
 NeoBundleFetch 'Shougo/neobundle.vim'
 " () とか
-NeoBundle 'townk/vim-autoclose'  
-" 今後このあたりに追加のプラグインをどんどん書いて行きます！！"
+NeoBundle 'townk/vim-autoclose' 
+" 自動補完機能
+NeoBundle 'Shougo/neocomplcache.git'
+NeoBundle 'Shougo/neosnippet.git'
 call neobundle#end()
 " Required:
 filetype plugin indent on
@@ -25,9 +28,13 @@ NeoBundleCheck
 "-------------------------
 " End Neobundle Settings.
 "-------------------------
-
-"" jjでEscape
-inoremap jj <ESC>
 "" コメントの色
 hi Comment ctermfg=6
+
+"-------------------------
+"  補完系
+"-------------------------
+" jjでEscape
+inoremap jj <ESC>
+
 
