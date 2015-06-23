@@ -4,9 +4,11 @@ set title  	     " 編集中のファイル名の表示
 set showmatch	 " ()の対応
 syntax on        " 
 set tabstop=4	 " インデント4文字
-set smartindent  " 
+set autoindent	 " オートインデント
+set expandtab    " タブをスペースに(?)i
+set shiftwidth=4 "
 set mouse=a      " マウス操作ができるように
-
+set ignorecase	 " 検索時の小文字大文字を無視
 
 "---------------------------
 " Start Neobundle Settings.
