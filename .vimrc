@@ -9,29 +9,18 @@ set expandtab    " タブをスペースに(?)i
 set shiftwidth=4 "
 set mouse=a      " マウス操作ができるように
 set ignorecase	 " 検索時の小文字大文字を無視
+set fenc=utf-8   " UTF-8
+set nobackup     " nobackup
+set noswapfile   " noswapfile
+set showcmd 
+set cursorline
+set smartindent
+set laststatus
+set smartindent
+set wildmode=list:longest
 
-"---------------------------
-" Start Neobundle Settings.
-"---------------------------
-" bundleで管理するディレクトリを指定
-set runtimepath+=~/.vim/bundle/neobundle.vim/
-" Required:
-call neobundle#begin(expand('~/.vim/bundle/'))
-" neobundle自体をneobundleで管理
-NeoBundleFetch 'Shougo/neobundle.vim'
-" () とか
-NeoBundle 'townk/vim-autoclose' 
-" 自動補完機能
-NeoBundle 'Shougo/neocomplcache.git'
-NeoBundle 'Shougo/neosnippet.git'
-call neobundle#end()
-" Required:
-filetype plugin indent on
-" 未インストールのプラグインがある場合、インストールするかどうかを尋ねてくれるようにする設定
-NeoBundleCheck
-"-------------------------
-" End Neobundle Settings.
-"-------------------------
+
+
 "" コメントの色  現在水色
 hi Comment ctermfg=6  
 
